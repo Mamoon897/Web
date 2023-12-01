@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Input Example</title>
+</head>
+<body>
+  <label for="nameInput">Enter your name:</label>
+  <input type="text" id="nameInput">
+  <button id="submitButton">Submit</button>
+
+  <script>
+    // Get a reference to the input element and the button
+    let nameInput = document.getElementById("nameInput");
+    let submitButton = document.getElementById("submitButton");
+
+    // Add an event listener to the button
+    submitButton.addEventListener("click", function () {
+      // Get the user's input from the input element
+      let userName = nameInput.value;
+
+      // Display a greeting with the user's input
+      console.log("Hello, " + userName + "!");
+    });
+  </script>
+</body>
+</html>
